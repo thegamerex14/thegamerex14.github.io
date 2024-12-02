@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tienda Online de la Elvia y los chous</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Contáctanos</h2>
+        <form action="procesar_contacto.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
